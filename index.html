@@ -64,24 +64,33 @@
                         </a>
                     </div>
                 </div>
-                <div class="row d-flex pt-3 ">
-                    <div class="col-6   px-0 ">
-                        <h5 class=" text-raise ">raise the next generation of leaders</h5>
-                        <span class="circle-blue"></span>
-                        <h6>Networking Lab is the fastest way to grow.</h6>
-                        <p class="text-virtual">Virtual office of a multi-level marketing company, platform for<br>
-                            Integrated digitalization of a MLM company's activities.</p>
-                        <hr>
-                        <span class="circ-checkmark"><img src="img/checkmark.png" class="img-checkmark"
-                                alt="checkmark"></span>
-                        <p class="text-checkmark">Attract skilled professionals, unite your team to <br>
-                            pursue a common goal working expediently and in <br> perfect coordination </p>
-                        <span class="circ-checkmark"><img src="img/checkmark.png" class="img-checkmark"
-                                alt="checkmark"></span>
-                        <p class="text-checkmark">Provide your market research consultants with <br>
-                            efficient tools in order to achieve success in online <br> business. </p>
-                        <button type="button" class="btn btn-primary px-3 ">Become the company of the new
-                            generation</button>
+                <h5 class=" text-raise ">raise the next generation of leaders</h5>
+                <div class="row  pt-3 ">
+                    <div class="col-6 d-flex justify-content-center px-0 ">
+                        <div class="">
+                            <span class="circle-blue"></span>
+                            <span class="header-dashed"></span>
+                            <span class="circ-checkmark"><img src="img/checkmark.png" class="img-checkmark"
+                                    alt="checkmark"></span>
+                            <span class="header-dashed"></span>
+                            <span class="circ-checkmark"><img src="img/checkmark.png" class="img-checkmark"
+                                    alt="checkmark"></span>
+                        </div>
+                        <div class="">
+                            <h6>Networking Lab is the fastest way to grow.</h6>
+                            <p class="text-virtual">Virtual office of a multi-level marketing company, platform for<br>
+                                Integrated digitalization of a MLM company's activities.</p>
+                            <hr>
+
+                            <p class="text-checkmark">Attract skilled professionals, unite your team to <br>
+                                pursue a common goal working expediently and in <br> perfect coordination </p>
+
+                            <p class="text-checkmark">Provide your market research consultants with <br>
+                                efficient tools in order to achieve success in online <br> business. </p>
+                            <button type="button" class="btn btn-primary px-3 ">Become the company of the new
+                                generation</button>
+                        </div>
+
                     </div>
                     <div class="col-6 people-img   px-0 ">
                     </div>
@@ -142,10 +151,14 @@
                             </div>
                             <ul class="nav nav-tabs">
                                 <li class="nav-item border-office">
-                                    <a class="nav-link active" href="#">Social network</a>
+                                    <a class="nav-link active" id="social-network-tab" data-toggle="tab"
+                                        href="#social-network" role="tab" aria-controls="social-network"
+                                        aria-selected="true">Social network</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Training and certification</a>
+                                    <a class="nav-link" id="social-network-tab" data-toggle="tab" href="#social-network"
+                                        role="tab" aria-controls="social-network" aria-selected="false">Training and
+                                        certification</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Internal (local) messenger</a>
@@ -154,7 +167,8 @@
                                     <a class="nav-link" href="#">Referral system</a>
                                 </li>
                             </ul>
-                            <div class="row nav-social ">
+                            <div class="row nav-social   tab-pane fade show active" id="social-network" role="tabpanel"
+                                aria-labelledby="social-network-tab">
                                 <div class="col-6 ">
                                     <p class="text-same-page mt-4">Same page tool. Closed social network aimed at
                                         uniting your community in <br>
@@ -178,18 +192,21 @@
                                             Event
                                             calendar</li>
                                     </ul>
-                                    <p class="text-the-company background-company"> The company’s performance depends on
-                                        who promotes its
-                                        product <br>
-                                        and the way how it is done. If you have a lot of employees, it is difficult <br>
-                                        to attain a uniform level of knowledge without gaps and<br>
-                                        misrepresentations, to communicate with each individual, to provide <br>
-                                        timely information, to make the personnel take important issues into <br>
-                                        account. Oftentimes people come out with lots of ideas, and it creates <br>
-                                        chaos at the workplace. </p>
                                 </div>
-                                <div class="col-6 d-flex justify-content-center align-items-center">
-                                    <img src="img/socialnet.png" alt="Socislnet">
+                                <div class="col-6 "><img src="img/socialnet.png" alt="Socialnet"></div>
+                                <div class="col-12 background-company px-0">
+                                    <div class="col-6">
+                                        <p class="text-the-company "> The company’s performance depends on
+                                            who promotes its
+                                            product <br>
+                                            and the way how it is done. If you have a lot of employees, it is difficult
+                                            <br>
+                                            to attain a uniform level of knowledge without gaps and<br>
+                                            misrepresentations, to communicate with each individual, to provide <br>
+                                            timely information, to make the personnel take important issues into <br>
+                                            account. Oftentimes people come out with lots of ideas, and it creates <br>
+                                            chaos at the workplace. </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -197,7 +214,193 @@
                 </div>
 
             </div>
+            <div class="container">
+                <h5 class="text-this-in text-left mt-3">attain more <br> using your skills</h5>
+                <div class="row mt-4">
+                    <div class="col-1">
+                        <span class="elipse">#1</span>
+                        <span class="dashed"></span>
+                        <span class="elipse">#2</span>
+                        <span class="dashed"></span>
+                        <span class="elipse">#3</span>
+                        <span class="dashed"></span>
+                        <span class="violet_checkmark"><img src="img/violet_checkmark.png"
+                                alt="violet_checkmark"></span>
+                        <span class="dashed"></span>
+                    </div>
+                    <div class="col-11">
+                        <div class="row box-shadow ">
+                            <div class="col-9 pt-3 pb-1">
+                                <h6>Inspire the best</h6>
+                                <p class="text-skill">Lack of information about a company is regarded as cheating. And
+                                    the policy “everyone
+                                    can join us” <br>
+                                    undermines expertness of the company’s team. The best experts prefer working at a
+                                    reliable company with <br>
+                                    skilled personnel and good prospects. </p>
+                            </div>
+                            <div class="col skill-background">
+                                <img src="img/skill1.png" class="skill-img" alt="icon_skill">
+                            </div>
+                            <div class="col grad-blue"><span class="transform">Onboarding</span></div>
+                        </div>
+                        <div class="row box-shadow mt-3">
+                            <div class="col-9 pt-3 pb-1">
+                                <h6>Select the worthy</h6>
+                                <p class="text-skill">By letting anybody join your company, you build a community of the
+                                    unknowns. Persons who lack <br>
+                                    business skills bring discredit on your company, blame you for their own failures
+                                    and damage your <br>
+                                    company’s reputation </p>
+                            </div>
+                            <div class="col skill-background">
+                                <img src="img/skill2.png" class="skill-img" alt="icon_skill">
+                            </div>
+                            <div class="col grad-blue"><span class="transform">Testing</span></div>
+                        </div>
+                        <div class="row box-shadow mt-3">
+                            <div class="col-9 pt-3 pb-1">
+                                <h6>Provide knowledge</h6>
+                                <p class="text-skill">Orientation towards network growth instead of quality of sales has
+                                    a negative impact on the company’s <br>
+                                    stability and its reputation. Focusing on the quality of sales and its relations
+                                    with the customers, the MLM <br>
+                                    companies improve their financial performance</p>
+                            </div>
+                            <div class="col skill-background">
+                                <img src="img/skill3.png" class="skill-img" alt="icon_skill">
+                            </div>
+                            <div class="col grad-blue"><span class="transform">Training</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block5-content">
+                <div class="container">
+                    <div class="row pt-5">
+                        <div class="col-6">
+                            <img src="img/people_block5.png" class=" people-block5" alt="">
+                        </div>
+                        <div class="col-6  pt-4">
+                            <h6 class="mt-5 text-prior">Prior to full-scale testing of the platform which <br>
+                                involves your team members, you can check our <br>
+                                demo version and see how we arranged <br>
+                                everything (no registration is needed)<br>
+                                <span class="colortext">Welcome. The kettle is on the boil :)</span></h6>
+                            <button type="button" class="btn btn-primary px-3 mt-4">Take a look at the system</button>
+                        </div>
+                    </div>
+                    <div class="row mt-5 pb-4">
+                        <div class="col-4">
+                            <div class=" box-shadow-block5 mx-auto"><img src="img/block5_1.png" class="picture-block5"
+                                    alt="block5_1"></div>
+                            <div>
+                                <p class="text-block5 mt-4">New platform format oriented towards the problems <br>
+                                    of the MLM companies which the latter had to solve <br>
+                                    manually previously</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class=" box-shadow-block5 mx-auto"><img src="img/block5_2.png" class="picture-block5"
+                                    alt="block5_1"></div>
+                            <div>
+                                <p class="text-block5 mt-4">Seamless combination of front office and back <br>
+                                    office, common database – fully integrated <br>
+                                    approach</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class=" box-shadow-block5 mx-auto"><img src="img/block5_3.png" class="picture-block5"
+                                    alt="block5_1"></div>
+                            <div>
+                                <p class="text-block5 mt-4">Mobile application + desktop version give you <br>
+                                    a possibility to work in a format which suits you best,<br>
+                                    to be mobile and thorough at the same time</p>
+                            </div>
+                        </div>
+                        <div class="col-2 mt-4"></div>
+                        <div class="col-4 mt-4">
+                            <div class=" box-shadow-block5 mx-auto"><img src="img/block5_4.png" class="picture-block5"
+                                    alt="block5_1"></div>
+                            <div>
+                                <p class="text-block5 mt-4">The system is simple to use but capable of solving <br>
+                                    very important business tasks </p>
+                            </div>
+                        </div>
+                        <div class="col-4 mt-4">
+                            <div class=" box-shadow-block5 mx-auto"><img src="img/block5_5.png" class="picture-block5"
+                                    alt="block5_1"></div>
+                            <div>
+                                <p class="text-block5 mt-4">The platform is being constantly developed – each <br>
+                                    day we improve and amend it</p>
+                            </div>
+                        </div>
+                        <div class="col-2 mt-4"></div>
 
+                    </div>
+                </div>
+            </div>
+            <div class="block6-content">
+                <div class="container">
+                    <h5 class="text-this-in text-light pt-5">Global changes. Clear goals</h5>
+                    <div class="row mb-4">
+                        <div class="col-4 ">
+                            <div class="backgroud-block6">
+                                <div class="basic py-3">basic</div>
+                                <div class="img-price"><img src="img/299.png" class="price" alt="price">
+                                </div>
+                                <div class="text-block6 pb-2">
+                                    <p>Неограниченный доступ к платформе <br>
+                                        Мощная панель администратора <br>
+                                        Обновления продукта <br>
+                                        Безрисковая гарантия <br>
+                                        E-mail поддержка <br>
+                                        <span class="crossed-out"> Маркетинговая служба </span> <br>
+                                        <span class="crossed-out">Премиум поддержка 24/7</span></p>
+                                    <button type="button" class="btn btn-primary basic-bottom px-3 mb-3">Начать
+                                        использование</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="backgroud-block6">
+                                <div class="standart py-3">standart</div>
+                                <div class="img-price"><img src="img/499.png" class="price" alt="price">
+                                </div>
+                                <div class="text-block6 pb-2">
+                                    <p>Неограниченный доступ к платформе <br>
+                                        Мощная панель администратора <br>
+                                        Обновления продукта <br>
+                                        Безрисковая гарантия <br>
+                                        E-mail поддержка <br>
+                                        Маркетинговая служба <br>
+                                        <span class="crossed-out">Премиум поддержка 24/7</span></p>
+                                    <button type="button" class="btn btn-primary standart-bottom px-3 mb-3">Начать
+                                        использование</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="backgroud-block6">
+                                <div class="premium py-3">premium</div>
+                                <div class="img-price"><img src="img/699.png" class="price" alt="price">
+                                </div>
+                                <div class="text-block6 pb-2">
+                                    <p>Неограниченный доступ к платформе <br>
+                                        Мощная панель администратора <br>
+                                        Обновления продукта <br>
+                                        Безрисковая гарантия <br>
+                                        E-mail поддержка <br>
+                                        Маркетинговая служба <br>
+                                        Премиум поддержка 24/7</p>
+                                    <button type="button" class="btn btn-primary premium-bottom px-3 mb-3">Начать
+                                        использование</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
