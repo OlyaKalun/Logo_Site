@@ -1,5 +1,11 @@
+/*========================
+        HEADER BLOCK
+   ======================*/
 .container {
-  width: 68%; }
+  width: 80%; }
+
+.btn {
+  white-space: initial; }
 
 .universal-h5 {
   font-weight: bold;
@@ -7,13 +13,17 @@
   text-align: center;
   padding-bottom: 0.7rem; }
 
-/*========================
-        HEADER BLOCK
-   ======================*/
+.basic, .standart, .premium {
+  background: #e6f1ff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 650;
+  border-top-right-radius: 3rem; }
+
 .header-content {
   display: block;
   background-image: url(../img/topleftbackground.png);
-  background-size: 47%;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: top right; }
   .header-content a:hover {
@@ -22,16 +32,16 @@
     border-top: 2.5px solid #3652e4; }
 
 .logo-img {
-  width: 1.5rem;
-  height: 2rem; }
+  width: 1.3rem;
+  height: 1.8rem; }
 
 .logo {
-  font-weight: 500;
+  font-weight: 550;
   color: black;
   font-size: 1.3rem; }
 
-.menu {
-  font-size: 0.7rem;
+.navbar .nav-item .nav-link.menu {
+  font-size: 0.85rem;
   color: white; }
 
 .text-raise {
@@ -89,9 +99,51 @@
   font-weight: 500;
   text-transform: uppercase; }
 
+.navbar-collapse {
+  flex-basis: initial; }
+
+.navbar-light .navbar-nav .nav-link {
+  display: inline-block;
+  padding-left: 0; }
+
+nav ul li {
+  margin-left: 0.5rem; }
+
+nav i::before {
+  font-size: 1rem; }
+
+nav a {
+  text-transform: uppercase; }
+
+a.nav-link.menu:nth-child(2) {
+  text-transform: lowercase; }
+
+.opacity-bg {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem; }
+
 /*========================
         BLOCK 2
    ======================*/
+.container {
+  width: 80%; }
+
+.btn {
+  white-space: initial; }
+
+.universal-h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 0.7rem; }
+
+.basic, .standart, .premium {
+  background: #e6f1ff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 650;
+  border-top-right-radius: 3rem; }
+
 .block2-content {
   background-image: url(../img/background2.png);
   background-repeat: no-repeat;
@@ -101,7 +153,7 @@
   padding-top: 7rem; }
 
 .text-networking {
-  font-size: 0.7rem;
+  font-size: 0.66rem;
   color: #6d7e8a;
   text-align: center; }
 
@@ -114,6 +166,25 @@
 /*========================
         BLOCK 3
    ======================*/
+.container {
+  width: 80%; }
+
+.btn {
+  white-space: initial; }
+
+.universal-h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 0.7rem; }
+
+.basic, .standart, .premium {
+  background: #e6f1ff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 650;
+  border-top-right-radius: 3rem; }
+
 .block3-content {
   background-image: url(../img/background3.png);
   background-repeat: no-repeat;
@@ -147,7 +218,6 @@
 
 .nav-tabs .nav-item {
   text-align: center;
-  margin-bottom: -3.6px;
   width: 23%; }
 
 .nav-social {
@@ -182,6 +252,11 @@
   padding-top: 0.5rem;
   font-weight: 600; }
 
+.position-img {
+  position: absolute;
+  z-index: 1;
+  padding: 3.8rem 0; }
+
 .general-office {
   width: 100%;
   margin-bottom: 7rem; }
@@ -197,9 +272,52 @@ ul {
   margin-inline-end: 0;
   padding-inline-start: 0.5em; }
 
+.tab-content > .active {
+  display: flex; }
+
+.nav-tabs .nav-link {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 0;
+  padding-bottom: 0;
+  padding-top: 0; }
+
+.tabSpan {
+  height: 100%;
+  border-bottom: 2px solid #54cff0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; }
+
+@media screen and (max-width: 768px) {
+  .position-img {
+    display: none; } }
+
 /*========================
         BLOCK 4
    ======================*/
+.container {
+  width: 80%; }
+
+.btn {
+  white-space: initial; }
+
+.universal-h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 0.7rem; }
+
+.basic, .standart, .premium {
+  background: #e6f1ff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 650;
+  border-top-right-radius: 3rem; }
+
 .elipse {
   color: #54cff0;
   border: 1.3px solid #54cff0;
@@ -255,7 +373,7 @@ ul {
   justify-content: center;
   align-items: center;
   color: #fff;
-  width: 2%;
+  width: 2.7rem;
   padding: 0;
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -268,6 +386,25 @@ ul {
 /*========================
         BLOCK 5
    ======================*/
+.container {
+  width: 80%; }
+
+.btn {
+  white-space: initial; }
+
+.universal-h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 0.7rem; }
+
+.basic, .standart, .premium {
+  background: #e6f1ff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 650;
+  border-top-right-radius: 3rem; }
+
 .block5-content {
   background-image: url(../img/background5.png);
   background-repeat: no-repeat;
@@ -305,12 +442,28 @@ ul {
   font-size: 0.65rem;
   text-align: center; }
 
-.nav-icon-shadow {
-  box-shadow: 0 0 20px #000000; }
-
 /*========================
         BLOCK 6
    ======================*/
+.container {
+  width: 80%; }
+
+.btn {
+  white-space: initial; }
+
+.universal-h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 0.7rem; }
+
+.basic, .standart, .premium {
+  background: #e6f1ff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 650;
+  border-top-right-radius: 3rem; }
+
 .block6-content {
   background-image: url(../img/background6.png);
   background-repeat: no-repeat;
@@ -319,13 +472,6 @@ ul {
 .backgroud-block6 {
   background: #e6f1ff;
   border-bottom-left-radius: 3rem;
-  border-top-right-radius: 3rem; }
-
-.basic, .standart, .premium {
-  background: #e6f1ff;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 650;
   border-top-right-radius: 3rem; }
 
 .basic {
@@ -375,6 +521,25 @@ ul {
 /*========================
         BLOCK 7
    ======================*/
+.container {
+  width: 80%; }
+
+.btn {
+  white-space: initial; }
+
+.universal-h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 0.7rem; }
+
+.basic, .standart, .premium {
+  background: #e6f1ff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 650;
+  border-top-right-radius: 3rem; }
+
 .picture-block7 {
   background-image: url(../img/picture_block7.png);
   background-repeat: no-repeat;
@@ -411,27 +576,47 @@ ul {
 .box-shadow-block7 {
   box-shadow: 0 0 5px #caced1;
   border-bottom-left-radius: 3.5rem;
-  border-top-right-radius: 3.5rem; }
+  border-top-right-radius: 3.5rem;
+  position: absolute;
+  z-index: 1;
+  background: white; }
 
 .our-mission {
   color: #3652e4;
   text-align: center;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  font-weight: 650; }
 
 .line {
-  border: 0.5px solid #3652e4;
-  background: #3652e4;
-  display: inline-flex;
-  width: 1rem;
-  margin-left: 12.2rem; }
+  border-bottom: 2px solid #3652e4; }
 
 /*========================
         FOOTER
    ======================*/
+.container {
+  width: 80%; }
+
+.btn {
+  white-space: initial; }
+
+.universal-h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 0.7rem; }
+
+.basic, .standart, .premium {
+  background: #e6f1ff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 650;
+  border-top-right-radius: 3rem; }
+
 .footer {
   background-image: url(../img/background_footer.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  margin-top: 4rem; }
 
 .picture-footer {
   background-image: url(../img/picture_footer.png);
@@ -441,11 +626,35 @@ ul {
 .form-control {
   border-radius: 1.6rem;
   box-shadow: 0 0 8px #caced1;
-  border: 1px solid white; }
+  border: 1px solid white;
+  font-size: 0.8rem; }
+
+.form-control.btn {
+  border-color: #54cff0;
+  font-size: 0.7rem; }
 
 /*========================
         CONTACT
    ======================*/
+.container {
+  width: 80%; }
+
+.btn {
+  white-space: initial; }
+
+.universal-h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 0.7rem; }
+
+.basic, .standart, .premium {
+  background: #e6f1ff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 650;
+  border-top-right-radius: 3rem; }
+
 .contact {
   background-image: url(../img/bg_footer.png);
   background-repeat: no-repeat;
@@ -455,3 +664,9 @@ ul {
   font-size: 0.8rem;
   color: #9ca6ae;
   text-align: right; }
+
+@font-face {
+  font-family: 'San Francisco Pro';
+  src: local("San Francisco Pro Display Thin"), local("San-Francisco-Pro-Display-Thin"), url("SFProDisplay-Thin.woff2") format("woff2"), url("SFProDisplay-Thin.woff") format("woff"), url("SFProDisplay-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }

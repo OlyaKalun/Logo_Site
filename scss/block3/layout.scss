@@ -1,0 +1,141 @@
+/*========================
+        BLOCK 3
+   ======================*/
+
+@import "../extend/extend.scss";
+@import "../variables.scss";
+
+.block3-content {
+  background-image: url(../img/background3.png);
+  background-repeat: no-repeat;
+  background-size: 100% 96%;
+
+  hr {
+    border-top: 1.5px solid #85aef3;
+  }
+}
+
+.block3-padding {
+  padding-top: 3rem;
+}
+
+.text-being {
+  font-size: 0.65rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.border-office {
+  border-bottom: 4px solid $color_light_blue;
+  border-radius: 0.15rem;
+}
+
+.nav-tabs .nav-link {
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 0;
+  background-color: #e6f1ff;
+  color: black;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-right: 0.3rem;
+}
+
+.nav-tabs .nav-item {
+  text-align: center;
+  width: 23%;
+}
+
+.nav-social {
+  background: #ffffff;
+  border-bottom-left-radius: 3.5rem;
+  margin-left: 0%;
+  margin-right: 0%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.text-same-page {
+  color: #6d7e8a;
+  font-size: 0.73rem;
+  padding-top: 0.5rem;
+}
+
+.list {
+  list-style: none;
+}
+
+.li-checkmark {
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text-the-company {
+  color: #000000;
+  font-size: 0.75rem;
+  padding-top: 0.5rem;
+  font-weight: 600;
+}
+
+.position-img {
+  position: absolute;
+  z-index: 1;
+  padding: 3.8rem 0;
+}
+
+.general-office {
+  width: 100%;
+  margin-bottom: 7rem;
+}
+
+.background-company {
+  background: #e6f1ff;
+  border-bottom-left-radius: 3.5rem;
+}
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0.5em;
+}
+
+.tab-content > .active {
+  display: flex;
+}
+
+.nav-tabs .nav-link {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 0;
+  padding-bottom: 0;
+  padding-top: 0; 
+}
+
+.tabSpan {
+  height: 100%;
+  border-bottom: 2px solid $color_light_blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .position-img {
+    display: none;
+  }
+}

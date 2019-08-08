@@ -1,0 +1,51 @@
+/*========================
+        BLOCK 5
+   ======================*/
+
+@import "../extend/extend.scss";
+@import "../variables.scss";
+
+.block5-content {
+  background-image: url(../img/background5.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+.people-block5 {
+  background-image: url(../img/people_block5.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.text-prior {
+  line-height: 1.6;
+  font-weight: 650;
+}
+
+.colortext {
+  color: $color_violet;
+}
+
+.picture-block5 {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.box-shadow-block5 {
+  box-shadow: 0 0 10px #caced1;
+  border-bottom-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  background: #fff;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-block5 {
+  color: #9ca6ae;
+  font-size: 0.65rem;
+  text-align: center;
+}

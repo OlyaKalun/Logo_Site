@@ -1,0 +1,30 @@
+/*========================
+        BLOCK 2
+   ======================*/
+
+@import "../extend/extend.scss";
+@import "../variables.scss";
+
+.block2-content {
+  background-image: url(../img/background2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  // font-family: "Open Sans", sans-serif;
+}
+
+.block2-padding {
+  padding-top: 7rem;
+}
+
+.text-networking {
+  font-size: 0.66rem;
+  color: #6d7e8a;
+  text-align: center;
+}
+
+.text-set-up {
+  color: $color_violet;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1rem;
+}

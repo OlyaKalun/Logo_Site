@@ -1,0 +1,136 @@
+/*========================
+        HEADER BLOCK
+   ======================*/
+
+@import "../extend/extend.scss";
+@import "../variables.scss";
+
+.header-content {
+  // font-family: "San Francisco Pro", sans-serif;
+  display: block;
+  background-image: url(../img/topleftbackground.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  hr {
+    border-top: 2.5px solid $color_violet;
+  }
+}
+
+.logo-img {
+  width: 1.3rem;
+  height: 1.8rem;
+}
+
+.logo {
+  font-weight: 550;
+  color: black;
+  font-size: 1.3rem;
+}
+.navbar .nav-item .nav-link.menu {
+  font-size: 0.85rem;
+  color: white;
+}
+
+.text-raise {
+  color: $color_violet;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.circle-blue {
+  border-radius: 50%;
+  background: $color_light_blue;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: block;
+}
+
+.circ-checkmark {
+  background-color: $color_violet;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: -0.6rem;
+}
+
+.header-dashed {
+  border-left: 1.4px dashed #d0e2f8;
+  margin-left: 0.2rem;
+  height: 4rem;
+  width: 1rem;
+  font-size: 2rem;
+}
+
+.header-dashed:nth-of-type(2) {
+  font-size: 4rem;
+}
+
+.people-img {
+  background-image: url(../img/people1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.text-virtual {
+  font-size: 0.8rem;
+  color: #6d7e8a;
+}
+
+.text-checkmark {
+  font-size: 0.8rem;
+}
+
+.btn-primary {
+  background-color: $color_light_blue;
+  border-color: $color_light_blue;
+  border-radius: 1.5rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+// ****************************
+
+.navbar-collapse {
+  flex-basis: initial;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  display: inline-block;
+  padding-left: 0;
+}
+
+nav ul li {
+  margin-left: 0.5rem;
+}
+
+nav i::before {
+  font-size: 1rem;
+}
+
+nav a {
+  text-transform: uppercase;
+}
+
+a.nav-link.menu:nth-child(2) {
+  text-transform: lowercase;
+}
+
+.opacity-bg {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+}
+
+

@@ -1,0 +1,18 @@
+/*========================
+        CONTACT
+   ======================*/
+
+@import "../extend/extend.scss";
+@import "../variables.scss";
+
+.contact {
+  background-image: url(../img/bg_footer.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.text-contact {
+  font-size: 0.8rem;
+  color: #9ca6ae;
+  text-align: right;
+}
