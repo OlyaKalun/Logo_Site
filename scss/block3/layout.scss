@@ -8,7 +8,8 @@
 .block3-content {
   background-image: url(../img/background3.png);
   background-repeat: no-repeat;
-  background-size: 100% 96%;
+  background-size: 100% 100%;
+  background-color: #f2f7fd;
 
   hr {
     border-top: 1.5px solid #85aef3;
@@ -95,7 +96,7 @@
 
 .general-office {
   width: 100%;
-  margin-bottom: 7rem;
+  margin-bottom: 1.5rem;
 }
 
 .background-company {
@@ -122,16 +123,28 @@ ul {
   align-items: center;
   border-left: 0;
   padding-bottom: 0;
-  padding-top: 0; 
+  padding-top: 0;
 }
 
 .tabSpan {
   height: 100%;
-  border-bottom: 2px solid $color_light_blue;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
+}
+
+.tabSpanBorder{
+  
+  border-bottom: 2px solid $color_light_blue;
+}
+
+.activated{
+  background: navy;
+}
+
+.padding-general-col{
+  padding-bottom: 8rem;
 }
 
 @media screen and (max-width: 768px) {

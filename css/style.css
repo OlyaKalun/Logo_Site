@@ -51,6 +51,9 @@
   margin-top: 2rem;
   font-weight: bold; }
 
+.menu {
+  color: white; }
+
 .circle-blue {
   border-radius: 50%;
   background: #54cff0;
@@ -188,7 +191,8 @@ a.nav-link.menu:nth-child(2) {
 .block3-content {
   background-image: url(../img/background3.png);
   background-repeat: no-repeat;
-  background-size: 100% 96%; }
+  background-size: 100% 100%;
+  background-color: #f2f7fd; }
   .block3-content hr {
     border-top: 1.5px solid #85aef3; }
 
@@ -259,7 +263,7 @@ a.nav-link.menu:nth-child(2) {
 
 .general-office {
   width: 100%;
-  margin-bottom: 7rem; }
+  margin-bottom: 1.5rem; }
 
 .background-company {
   background: #e6f1ff;
@@ -286,11 +290,19 @@ ul {
 
 .tabSpan {
   height: 100%;
-  border-bottom: 2px solid #54cff0;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem; }
+
+.tabSpanBorder {
+  border-bottom: 2px solid #54cff0; }
+
+.activated {
+  background: navy; }
+
+.padding-general-col {
+  padding-bottom: 8rem; }
 
 @media screen and (max-width: 768px) {
   .position-img {
@@ -383,6 +395,24 @@ ul {
   transform: rotate(-90deg);
   display: inline-block; }
 
+@media screen and (max-width: 768px) {
+  .block4-col1 {
+    display: none; }
+  .transform {
+    transform: rotate(0deg); }
+  .grad-blue {
+    background-image: linear-gradient(0deg, #3754e4, #53ccf0);
+    border-top-right-radius: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    margin: 0.2rem 0;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600; } }
+
 /*========================
         BLOCK 5
    ======================*/
@@ -406,9 +436,7 @@ ul {
   border-top-right-radius: 3rem; }
 
 .block5-content {
-  background-image: url(../img/background5.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%; }
+  background-color: #f2f7fd; }
 
 .people-block5 {
   background-image: url(../img/people_block5.png);
@@ -517,6 +545,10 @@ ul {
 .crossed-out {
   color: #c2c8cc;
   text-decoration: line-through; }
+
+.padding-col-block6 {
+  padding: 0rem 3rem;
+  padding-bottom: 6rem; }
 
 /*========================
         BLOCK 7
@@ -658,7 +690,8 @@ ul {
 .contact {
   background-image: url(../img/bg_footer.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%; }
+  background-size: contain;
+  background-color: #f2f7fd; }
 
 .text-contact {
   font-size: 0.8rem;

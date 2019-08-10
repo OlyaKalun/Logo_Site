@@ -129,7 +129,7 @@
                 <!-- DESCRIPTION -->
                 <div class="row justify-content-center">
                     <div class="col-sm-12 col-md-8">
-                        <h5 class="universal-h5 text-light">Simple actions. Tipping point</h5>
+                        <h5 class="universal-h5 text-light pt-5">Simple actions. Tipping point</h5>
                         <p class="text-being">Being an expert, you realize that limitless possibilities provided by
                             modern day
                             technologies are available for you.
@@ -147,776 +147,667 @@
                 <div class="row justify-content-center">
                     <div class="col-sm-12 col-md-8 general-office">
                         <ul class="nav justify-content-center">
-                            <li class="nav-item border-office">
-                                <a class="nav-link active universal-h5 text-light">BACK OFFICE</a>
+                            <li class="nav-item " onclick="controller(event)">
+                                <a class="nav-link active universal-h5 text-light" id="back-office-tab"
+                                    data-toggle="tab" href="#back-office" role="tab" aria-controls="back-office"
+                                    aria-selected="true">BACK OFFICE</a>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link universal-h5 text-light">FRONT OFFICE</a>
+                            <li class="nav-item " onclick="controller(event)">
+                                <a class="nav-link universal-h5 text-light" id="front-office-tab" data-toggle="tab"
+                                    href="#front-office" role="tab" aria-controls="front-office"
+                                    aria-selected="false">FRONT OFFICE</a>
                             </li>
                         </ul>
                         <hr class="mt-0">
-                        <div class=" text-center text-light pb-3">Simplify interaction between your team members
+                        <div class=" text-center text-light ">Simplify interaction between your team members
                         </div>
                     </div>
                 </div>
                 <!-- END CONTROLLER -->
 
-                <!-- OFFICES -->
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <!-- TABS -->
-                        <ul class="nav nav-tabs " role="tablist" id="back-office">
-                            <li class="nav-item ">
-                                <a class="nav-link active" id="social-network-tab" data-toggle="tab"
-                                    href="#social-network" role="tab" aria-controls="social-network"
-                                    aria-selected="true">
-                                    <span class="tabSpan">
-                                        <span> Social network</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="training-tab" data-toggle="tab" href="#training" role="tab"
-                                    aria-controls="training" aria-selected="false">
-                                    <span class="tabSpan">
-                                        <span> Training and
-                                            certification</span>
-                                    </span>
+                <div class="tab-content  px-sm-0" id="nav-tabContent">
+                    <!-- BACK OFFICES -->
+                    <div class="row padding-general-col justify-content-center tab-pane fade show active"
+                        id="back-office" role="tabpanel" aria-labelledby="back-office-tab">
+                        <div class="col-12">
+                            <!-- TABS -->
+                            <ul class="nav nav-tabs ">
+                                <li class="nav-item " onclick="toggleClass(this)">
+                                    <a class="nav-link active" id="social-network-tab" data-toggle="tab"
+                                        href="#social-network" role="tab" aria-controls="social-network"
+                                        aria-selected="true">
+                                        <span class="tabSpan">
+                                            <span> Social network</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" onclick="toggleClass(this)">
+                                    <a class="nav-link" id="training-tab" data-toggle="tab" href="#training" role="tab"
+                                        aria-controls="training" aria-selected="false">
+                                        <span class="tabSpan">
+                                            <span> Training and
+                                                certification</span>
+                                        </span>
 
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="social-network-tab" data-toggle="tab" href="#social-network"
-                                    role="tab" aria-controls="social-network" aria-selected="true">
-                                    <span class="tabSpan">
-                                        <span> Internal (local)
-                                            messenger</span>
-                                    </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" onclick="toggleClass(this)">
+                                    <a class="nav-link" data-toggle="tab" href="#social-network" role="tab"
+                                        aria-controls="social-network" aria-selected="true">
+                                        <span class="tabSpan">
+                                            <span> Internal (local)
+                                                messenger</span>
+                                        </span>
 
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="training-tab" data-toggle="tab" href="#training" role="tab"
-                                    aria-controls="training" aria-selected="false">
-                                    <span class="tabSpan">
-                                        <span> Referral system</span>
-                                    </span></a>
-                            </li>
-                        </ul>
-                        <!-- END OF TABS -->
-
-                        <div class="tab-content  px-sm-0" id="nav-tabContent">
-                            <div class="row nav-social   tab-pane fade show active" id="social-network" role="tabpanel"
-                                aria-labelledby="social-network-tab">
-                                <div class="col-sm-12 col-md-6">
-                                    <p class="text-same-page mt-4">Same page tool. Closed social network aimed at
-                                        uniting your community in <br>
-                                        order to bring it to a new level of information awareness and involvement.
-                                    </p>
-                                    <ul class="mb-5">
-                                        <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                                <img src="img/li_checkmark.png" class="mr-3" alt="checkmark">
-                                            </span>RSS
-                                            feed</li>
-                                        <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                                <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
-                                            Polls</li>
-                                        <li class="text-same-page list d-flex"><span class="li-checkmark">
-                                                <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
-                                            Blog</li>
-                                        <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                                <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
-                                            Knowledge
-                                            database</li>
-                                        <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                                <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
-                                            Event
-                                            calendar</li>
-                                    </ul>
+                                    </a>
+                                </li>
+                                <li class="nav-item" onclick="toggleClass(this)">
+                                    <a class="nav-link" data-toggle="tab" href="#training" role="tab"
+                                        aria-controls="training" aria-selected="false">
+                                        <span class="tabSpan">
+                                            <span> Referral system</span>
+                                        </span></a>
+                                </li>
+                            </ul>
+                            <!-- END OF TABS -->
+                            <!-- CONTENT TABS FOR BACK OFFICE -->
+                            <div class="tab-content  px-sm-0" id="nav-tabContent">
+                                <div class="row nav-social   tab-pane fade show active" id="social-network"
+                                    role="tabpanel" aria-labelledby="social-network-tab">
+                                    <div class="col-sm-12  col-md-6">
+                                        <p class="text-same-page mt-4">Same page tool. Closed social network aimed at
+                                            uniting your community in <br>
+                                            order to bring it to a new level of information awareness and involvement.
+                                        </p>
+                                        <ul class="mb-5">
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark">
+                                                </span>RSS
+                                                feed</li>
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
+                                                Polls</li>
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
+                                                Blog</li>
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
+                                                Knowledge
+                                                database</li>
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
+                                                Event
+                                                calendar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 "><img src="img/socialnet.png" class="position-img"
+                                            style="width: 90%" alt="Socialnet"></div>
+                                    <div class="col-sm-12 background-company px-0">
+                                        <div class="col-sm-12 col-md-12 col-lg-6">
+                                            <p class="text-the-company "> The company’s performance depends on
+                                                who promotes its
+                                                product <br>
+                                                and the way how it is done. If you have a lot of employees, it is
+                                                difficult
+                                                <br>
+                                                to attain a uniform level of knowledge without gaps and<br>
+                                                misrepresentations, to communicate with each individual, to provide <br>
+                                                timely information, to make the personnel take important issues into
+                                                <br>
+                                                account. Often times people come out with lots of ideas, and it creates
+                                                <br>
+                                                chaos at the workplace. </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-sm-12 col-md-6 "><img src="img/socialnet.png" class="position-img"
-                                        style="width: 31vw" alt="Socialnet"></div>
-                                <div class="col-sm-12 background-company px-0">
-                                    <div class="col-sm-12 col-md-12 col-lg-6">
-                                        <p class="text-the-company "> The company’s performance depends on
-                                            who promotes its
-                                            product <br>
-                                            and the way how it is done. If you have a lot of employees, it is
-                                            difficult
+                                <div class="row nav-social  tab-pane fade " id="training" role="tabpanel"
+                                    aria-labelledby="training-tab">
+                                    <div class="col-sm-12 col-md-6">
+                                        <p class="text-same-page mt-4">Often times people come out with lots of ideas,
                                             <br>
-                                            to attain a uniform level of knowledge without gaps and<br>
-                                            misrepresentations, to communicate with each individual, to provide <br>
-                                            timely information, to make the personnel take important issues into
-                                            <br>
-                                            account. Often times people come out with lots of ideas, and it creates
-                                            <br>
-                                            chaos at the workplace. </p>
+                                            and it creates chaos at the workplace. <br>
+                                            order to bring it to a new level of information awareness and involvement.
+                                        </p>
+                                        <ul class="mb-5">
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark">
+                                                </span>Knowledge
+                                                database </li>
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
+                                                Event
+                                                calendar</li>
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
+                                                Blog</li>
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
+                                                RSS
+                                                feed</li>
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
+                                                Polls</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 "><img src="img/socialnet.png" class="position-img"
+                                            style="width: 90%" alt="Socialnet"></div>
+                                    <div class="col-sm-12 background-company px-0">
+                                        <div class="col-sm-12 col-md-12 col-lg-6">
+                                            <p class="text-the-company "> The company’s performance depends on
+                                                who promotes its
+                                                product <br>
+                                                and the way how it is done. If you have a lot of employees, it is
+                                                difficult
+                                                <br>
+                                                to attain a uniform level of knowledge without gaps and<br>
+                                                misrepresentations, to communicate with each individual, to provide <br>
+                                                timely information, to make the personnel take important issues into
+                                                <br>
+                                                account. Often times people come out with lots of ideas, and it creates
+                                                <br>
+                                                chaos at the workplace. </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row nav-social   tab-pane fade " id="training" role="tabpanel"
-                                aria-labelledby="training-tab">
-                                <div class="col-6 ">
-                                    <p class="text-same-page mt-4">Often times people come out with lots of ideas,
-                                        <br>
-                                        and it creates chaos at the workplace. <br>
-                                        order to bring it to a new level of information awareness and involvement.
-                                    </p>
-                                    <ul class="mb-5">
-                                        <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                                <img src="img/li_checkmark.png" class="mr-3" alt="checkmark">
-                                            </span> Knowledge
-                                            database</li>
-                                        <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                                <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
-                                            Event
-                                            calendar
-                                        </li>
-                                        <li class="text-same-page list d-flex"><span class="li-checkmark">
-                                                <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
-                                            Blog</li>
-                                        <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                                <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>RSS
-                                            feed
-                                        </li>
-                                        <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                                <img src="img/li_checkmark.png" class="mr-3"
-                                                    alt="checkmark"></span>Polls
-                                        </li>
-                                    </ul>
+                            <!-- END OF CONTENT TABS FOR BACK OFFICE -->
+                        </div>
+                    </div>
+                    <!-- END OF BACK OFFICES -->
+                    <!-- FRONT OFFICES -->
+                    <div class="row padding-general-col justify-content-center tab-pane fade " id="front-office"
+                        role="tabpanel" aria-labelledby="front-office-tab">
+                        <div class="col-12">
+                            <!-- TABS -->
+                            <ul class="nav nav-tabs ">
+                                <li class="nav-item ">
+                                    <a class="nav-link active" id="social-network-tab" data-toggle="tab"
+                                        href="#social-network" role="tab" aria-controls="social-network"
+                                        aria-selected="true">
+                                        <span class="tabSpan">
+                                            <span> Social network</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="training-tab" data-toggle="tab" href="#training" role="tab"
+                                        aria-controls="training" aria-selected="false">
+                                        <span class="tabSpan">
+                                            <span> Training and
+                                                certification</span>
+                                        </span>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <!-- END OF TABS -->
+                            <!-- CONTENT TABS FOR BACK OFFICE -->
+                            <div class="tab-content  px-sm-0" id="nav-tabContent">
+                                <div class="row nav-social   tab-pane fade show active" id="social-network"
+                                    role="tabpanel" aria-labelledby="social-network-tab">
+                                    <div class="col-sm-12 col-md-6">
+                                        <p class="text-same-page mt-4">Same page tool. Closed social network aimed at
+                                            uniting your community in <br>
+                                            order to bring it to a new level of information awareness and involvement.
+                                        </p>
+                                        <ul class="mb-5">
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark">
+                                                </span>RSS
+                                                feed</li>
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
+                                                Polls</li>
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
+                                                Blog</li>
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
+                                                Knowledge
+                                                database</li>
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
+                                                Event
+                                                calendar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 "><img src="img/socialnet.png" class="position-img"
+                                            style="width: 90%" alt="Socialnet"></div>
+                                    <div class="col-sm-12 background-company px-0">
+                                        <div class="col-sm-12 col-md-12 col-lg-6">
+                                            <p class="text-the-company "> The company’s performance depends on
+                                                who promotes its
+                                                product <br>
+                                                and the way how it is done. If you have a lot of employees, it is
+                                                difficult
+                                                <br>
+                                                to attain a uniform level of knowledge without gaps and<br>
+                                                misrepresentations, to communicate with each individual, to provide <br>
+                                                timely information, to make the personnel take important issues into
+                                                <br>
+                                                account. Often times people come out with lots of ideas, and it creates
+                                                <br>
+                                                chaos at the workplace. </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-6 "><img src="img/socialnet.png" class="position-img"
-                                        style="width: 31vw" alt="Socialnet"></div>
-                                <div class="col-12 background-company px-0">
-                                    <div class="col-6">
-                                        <p class="text-the-company "> The company’s performance depends on
-                                            who promotes its
-                                            product <br>
-                                            and the way how it is done. If you have a lot of employees, it is
-                                            difficult
+                                <div class="row nav-social  tab-pane fade " id="training" role="tabpanel"
+                                    aria-labelledby="training-tab">
+                                    <div class="col-sm-12 col-md-6">
+                                        <p class="text-same-page mt-4">Often times people come out with lots of ideas,
                                             <br>
-                                            to attain a uniform level of knowledge without gaps and<br>
-                                            misrepresentations, to communicate with each individual, to provide <br>
-                                            timely information, to make the personnel take important issues into
-                                            <br>
-                                            account. Oftentimes people come out with lots of ideas, and it creates
-                                            <br>
-                                            chaos at the workplace. </p>
+                                            and it creates chaos at the workplace. <br>
+                                            order to bring it to a new level of information awareness and involvement.
+                                        </p>
+                                        <ul class="mb-5">
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark">
+                                                </span>Knowledge
+                                                database </li>
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
+                                                Event
+                                                calendar</li>
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
+                                                Blog</li>
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
+                                                RSS
+                                                feed</li>
+                                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
+                                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
+                                                Polls</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 "><img src="img/socialnet.png" class="position-img"
+                                            style="width: 90%" alt="Socialnet"></div>
+                                    <div class="col-sm-12 background-company px-0">
+                                        <div class="col-sm-12 col-md-12 col-lg-6">
+                                            <p class="text-the-company "> The company’s performance depends on
+                                                who promotes its
+                                                product <br>
+                                                and the way how it is done. If you have a lot of employees, it is
+                                                difficult
+                                                <br>
+                                                to attain a uniform level of knowledge without gaps and<br>
+                                                misrepresentations, to communicate with each individual, to provide <br>
+                                                timely information, to make the personnel take important issues into
+                                                <br>
+                                                account. Often times people come out with lots of ideas, and it creates
+                                                <br>
+                                                chaos at the workplace. </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- END OF CONTENT TABS FOR BACK OFFICE -->
                         </div>
                     </div>
-                </div>
-                <!-- <div class="container">
-                <div class="row justify-content-center block3-padding">
-
-    
-
-                        
-
-            <ul class="nav nav-tabs " role="tablist" id="back-office">
-                <li class="nav-item ">
-                    <a class="nav-link active" id="social-network-tab" data-toggle="tab" href="#social-network"
-                        role="tab" aria-controls="social-network" aria-selected="true"><span class="border-office pb-3">
-                            Social network
-                        </span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="training-tab" data-toggle="tab" href="#training" role="tab"
-                        aria-controls="training" aria-selected="false">Training and
-                        certification</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="social-network-tab" data-toggle="tab" href="#social-network" role="tab"
-                        aria-controls="social-network" aria-selected="true">Internal (local)
-                        messenger</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="training-tab" data-toggle="tab" href="#training" role="tab"
-                        aria-controls="training" aria-selected="false">Referral system</a>
-                </li>
-            </ul>
-
-            <div class="tab-content  px-sm-0" id="nav-tabContent">
-                <div class="row nav-social   tab-pane fade show active" id="social-network" role="tabpanel"
-                    aria-labelledby="social-network-tab">
-                    <div class="col-6 ">
-                        <p class="text-same-page mt-4">Same page tool. Closed social network aimed at
-                            uniting your community in <br>
-                            order to bring it to a new level of information awareness and involvement.
-                        </p>
-                        <ul class="mb-5">
-                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark">
-                                </span>RSS
-                                feed</li>
-                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
-                                Polls</li>
-                            <li class="text-same-page list d-flex"><span class="li-checkmark">
-                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
-                                Blog</li>
-                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
-                                Knowledge
-                                database</li>
-                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
-                                Event
-                                calendar</li>
-                        </ul>
-                    </div>
-                    <div class="col-6 "><img src="img/socialnet.png" class="position-img" style="width: 31vw"
-                            alt="Socialnet"></div>
-                    <div class="col-12 background-company px-0">
-                        <div class="col-6">
-                            <p class="text-the-company "> The company’s performance depends on
-                                who promotes its
-                                product <br>
-                                and the way how it is done. If you have a lot of employees, it is
-                                difficult
-                                <br>
-                                to attain a uniform level of knowledge without gaps and<br>
-                                misrepresentations, to communicate with each individual, to provide <br>
-                                timely information, to make the personnel take important issues into
-                                <br>
-                                account. Often times people come out with lots of ideas, and it creates
-                                <br>
-                                chaos at the workplace. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row nav-social   tab-pane fade " id="training" role="tabpanel"
-                    aria-labelledby="training-tab">
-                    <div class="col-6 ">
-                        <p class="text-same-page mt-4">Often times people come out with lots of ideas,
-                            <br>
-                            and it creates chaos at the workplace. <br>
-                            order to bring it to a new level of information awareness and involvement.
-                        </p>
-                        <ul class="mb-5">
-                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark">
-                                </span> Knowledge
-                                database</li>
-                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
-                                Event
-                                calendar
-                            </li>
-                            <li class="text-same-page list d-flex"><span class="li-checkmark">
-                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
-                                Blog</li>
-                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>RSS
-                                feed
-                            </li>
-                            <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                    <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>Polls
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-6 "><img src="img/socialnet.png" class="position-img" style="width: 31vw"
-                            alt="Socialnet"></div>
-                    <div class="col-12 background-company px-0">
-                        <div class="col-6">
-                            <p class="text-the-company "> The company’s performance depends on
-                                who promotes its
-                                product <br>
-                                and the way how it is done. If you have a lot of employees, it is
-                                difficult
-                                <br>
-                                to attain a uniform level of knowledge without gaps and<br>
-                                misrepresentations, to communicate with each individual, to provide <br>
-                                timely information, to make the personnel take important issues into
-                                <br>
-                                account. Oftentimes people come out with lots of ideas, and it creates
-                                <br>
-                                chaos at the workplace. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            
-
-                <ul class="nav nav-tabs" role="tablist" id="front-office">
-                    <li class="nav-item ">
-                        <a class="nav-link active" id="social-network-tab" data-toggle="tab" href="#social-network"
-                            role="tab" aria-controls="social-network" aria-selected="true"><span
-                                class="border-office pb-3">
-                                Social network
-                            </span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="training-tab" data-toggle="tab" href="#training" role="tab"
-                            aria-controls="training" aria-selected="false">Training and
-                            certification</a>
-                    </li>
-                </ul>
-                <div class="tab-content  px-sm-0  " id="nav-tabContent">
-                    <div class="row nav-social   tab-pane fade show active" id="social-network" role="tabpanel"
-                        aria-labelledby="social-network-tab">
-                        <div class="col-6 ">
-                            <p class="text-same-page mt-4">Same page tool. Closed social network aimed at
-                                uniting your community in <br>
-                                order to bring it to a new level of information awareness and involvement.
-                            </p>
-                            <ul class="mb-5">
-                                <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                        <img src="img/li_checkmark.png" class="mr-3" alt="checkmark">
-                                    </span>RSS
-                                    feed</li>
-                                <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                        <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
-                                    Polls</li>
-                                <li class="text-same-page list d-flex"><span class="li-checkmark">
-                                        <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
-                                    Blog</li>
-                                <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                        <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
-                                    Knowledge
-                                    database</li>
-                                <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                        <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
-                                    Event
-                                    calendar</li>
-                            </ul>
-                        </div>
-                        <div class="col-6 "><img src="img/socialnet.png" class="position-img" style="width: 31vw"
-                                alt="Socialnet"></div>
-                        <div class="col-12 background-company px-0">
-                            <div class="col-6">
-                                <p class="text-the-company "> The company’s performance depends on
-                                    who promotes its
-                                    product <br>
-                                    and the way how it is done. If you have a lot of employees, it is
-                                    difficult
-                                    <br>
-                                    to attain a uniform level of knowledge without gaps and<br>
-                                    misrepresentations, to communicate with each individual, to provide <br>
-                                    timely information, to make the personnel take important issues into
-                                    <br>
-                                    account. Often times people come out with lots of ideas, and it creates
-                                    <br>
-                                    chaos at the workplace. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row nav-social   tab-pane fade " id="training" role="tabpanel"
-                        aria-labelledby="training-tab">
-                        <div class="col-6 ">
-                            <p class="text-same-page mt-4">Often times people come out with lots of ideas,
-                                <br>
-                                and it creates chaos at the workplace. <br>
-                                order to bring it to a new level of information awareness and involvement.
-                            </p>
-                            <ul class="mb-5">
-                                <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                        <img src="img/li_checkmark.png" class="mr-3" alt="checkmark">
-                                    </span> Knowledge
-                                    database</li>
-                                <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                        <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
-                                    Event
-                                    calendar
-                                </li>
-                                <li class="text-same-page list d-flex"><span class="li-checkmark">
-                                        <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>
-                                    Blog</li>
-                                <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                        <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>RSS
-                                    feed
-                                </li>
-                                <li class="text-same-page list d-flex"><span class="li-checkmark ">
-                                        <img src="img/li_checkmark.png" class="mr-3" alt="checkmark"></span>Polls
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-6 "><img src="img/socialnet.png" class="position-img" style="width: 31vw"
-                                alt="Socialnet"></div>
-                        <div class="col-12 background-company px-0">
-                            <div class="col-6">
-                                <p class="text-the-company "> The company’s performance depends on
-                                    who promotes its
-                                    product <br>
-                                    and the way how it is done. If you have a lot of employees, it is
-                                    difficult
-                                    <br>
-                                    to attain a uniform level of knowledge without gaps and<br>
-                                    misrepresentations, to communicate with each individual, to provide <br>
-                                    timely information, to make the personnel take important issues into
-                                    <br>
-                                    account. Oftentimes people come out with lots of ideas, and it creates
-                                    <br>
-                                    chaos at the workplace. </p>
-                            </div>
-                        </div>
-                    </div>
-
+                    <!-- END OF FRONT OFFICES -->
                 </div>
 
 
             </div>
         </div>
-    </div> -->
-
+        <!-- END OF OFFICES BLOCK -->
+        <!-- SKILLS BLOCK -->
+        <div class="container">
+            <h5 class="universal-h5 text-left mt-5">attain more <br> using your skills</h5>
+            <div class="row mt-4">
+                <div class="col-md-1 block4-col1">
+                    <span class="elipse">#1</span>
+                    <span class="dashed"></span>
+                    <span class="elipse">#2</span>
+                    <span class="dashed"></span>
+                    <span class="elipse">#3</span>
+                    <span class="dashed"></span>
+                    <span class="violet_checkmark"><img src="img/violet_checkmark.png" alt="violet_checkmark"></span>
+                    <span class="dashed"></span>
+                </div>
+                <div class="col-md-11">
+                    <div class="row box-shadow">
+                        <div class="col-sm-9 col-md-9 pt-3 pb-1">
+                            <h6>Inspire the best</h6>
+                            <p class="text-skill">Lack of information about a company is regarded as cheating. And
+                                the policy “everyone
+                                can join us” <br>
+                                undermines expertness of the company’s team. The best experts prefer working at a
+                                reliable company with <br>
+                                skilled personnel and good prospects. </p>
+                        </div>
+                        <div class="col-md-2 skill-background">
+                            <img src="img/skill1.png" class="skill-img" alt="icon_skill">
+                        </div>
+                        <div class="col-md-1 grad-blue"><span class="transform">Onboarding</span></div>
+                    </div>
+                    <div class="row box-shadow mt-3">
+                        <div class="col-sm-9 col-md-9 pt-3 pb-1">
+                            <h6>Select the worthy</h6>
+                            <p class="text-skill">By letting anybody join your company, you build a community of the
+                                unknowns. Persons who lack <br>
+                                business skills bring discredit on your company, blame you for their own failures
+                                and damage your <br>
+                                company’s reputation </p>
+                        </div>
+                        <div class="col-md-2 skill-background">
+                            <img src="img/skill2.png" class="skill-img" alt="icon_skill">
+                        </div>
+                        <div class="col-md-1 grad-blue"><span class="transform">Testing</span></div>
+                    </div>
+                    <div class="row box-shadow mt-3">
+                        <div class="col-sm-9 col-md-9 pt-3 pb-1">
+                            <h6>Provide knowledge</h6>
+                            <p class="text-skill">Orientation towards network growth instead of quality of sales has
+                                a negative impact on the company’s <br>
+                                stability and its reputation. Focusing on the quality of sales and its relations
+                                with the customers, the MLM <br>
+                                companies improve their financial performance</p>
+                        </div>
+                        <div class="col-md-2 skill-background">
+                            <img src="img/skill3.png" class="skill-img" alt="icon_skill">
+                        </div>
+                        <div class="col-md-1 grad-blue"><span class="transform">Training</span></div>
+                    </div>
+                </div>
             </div>
-            <!-- END OF OFFICES BLOCK -->
+        </div>
+        <!-- ENF OF SKILLS BLOCK -->
+
+        <div class="block5-content">
             <div class="container">
-                <h5 class="universal-h5 text-left mt-3">attain more <br> using your skills</h5>
-                <div class="row mt-4">
-                    <div class="col-1">
-                        <span class="elipse">#1</span>
-                        <span class="dashed"></span>
-                        <span class="elipse">#2</span>
-                        <span class="dashed"></span>
-                        <span class="elipse">#3</span>
-                        <span class="dashed"></span>
-                        <span class="violet_checkmark"><img src="img/violet_checkmark.png"
-                                alt="violet_checkmark"></span>
-                        <span class="dashed"></span>
+                <div class="row pt-5">
+                    <div class="col-md-6 col-sm-12 people-block5 ">
+                        <!-- <img src="img/people_block5.png" class=" people-block5" alt=""> -->
                     </div>
-                    <div class="col-11">
-                        <div class="row box-shadow">
-                            <div class="col-9 pt-3 pb-1">
-                                <h6>Inspire the best</h6>
-                                <p class="text-skill">Lack of information about a company is regarded as cheating. And
-                                    the policy “everyone
-                                    can join us” <br>
-                                    undermines expertness of the company’s team. The best experts prefer working at a
-                                    reliable company with <br>
-                                    skilled personnel and good prospects. </p>
-                            </div>
-                            <div class="col-2.2 skill-background">
-                                <img src="img/skill1.png" class="skill-img" alt="icon_skill">
-                            </div>
-                            <div class="col-0.8 grad-blue"><span class="transform">Onboarding</span></div>
-                        </div>
-                        <div class="row box-shadow mt-3">
-                            <div class="col-9 pt-3 pb-1">
-                                <h6>Select the worthy</h6>
-                                <p class="text-skill">By letting anybody join your company, you build a community of the
-                                    unknowns. Persons who lack <br>
-                                    business skills bring discredit on your company, blame you for their own failures
-                                    and damage your <br>
-                                    company’s reputation </p>
-                            </div>
-                            <div class="col-2.2 skill-background">
-                                <img src="img/skill2.png" class="skill-img" alt="icon_skill">
-                            </div>
-                            <div class="col-0.8 grad-blue"><span class="transform">Testing</span></div>
-                        </div>
-                        <div class="row box-shadow mt-3">
-                            <div class="col-9 pt-3 pb-1">
-                                <h6>Provide knowledge</h6>
-                                <p class="text-skill">Orientation towards network growth instead of quality of sales has
-                                    a negative impact on the company’s <br>
-                                    stability and its reputation. Focusing on the quality of sales and its relations
-                                    with the customers, the MLM <br>
-                                    companies improve their financial performance</p>
-                            </div>
-                            <div class="col-2.2 skill-background">
-                                <img src="img/skill3.png" class="skill-img" alt="icon_skill">
-                            </div>
-                            <div class="col-0.8 grad-blue"><span class="transform">Training</span></div>
-                        </div>
+                    <div class="col-md-6  col-sm-12">
+                        <h6 class="mt-5 text-prior">Prior to full-scale testing of the platform which <br>
+                            involves your team members, you can check our <br>
+                            demo version and see how we arranged <br>
+                            everything (no registration is needed)<br>
+                            <span class="colortext">Welcome. The kettle is on the boil :)</span></h6>
+                        <button type="button" class="btn btn-primary px-3 mt-4 mb-5">Take a look at the
+                            system</button>
                     </div>
                 </div>
-            </div>
-            <div class="block5-content">
-                <div class="container">
-                    <div class="row pt-5">
-                        <div class="col-6 people-block5 ">
-                            <!-- <img src="img/people_block5.png" class=" people-block5" alt=""> -->
-                        </div>
-                        <div class="col-6  ">
-                            <h6 class="mt-5 text-prior">Prior to full-scale testing of the platform which <br>
-                                involves your team members, you can check our <br>
-                                demo version and see how we arranged <br>
-                                everything (no registration is needed)<br>
-                                <span class="colortext">Welcome. The kettle is on the boil :)</span></h6>
-                            <button type="button" class="btn btn-primary px-3 mt-4 mb-5">Take a look at the
-                                system</button>
+                <div class="row mt-5 pb-4">
+                    <div class="col-md-4 col-sm-12">
+                        <div class=" box-shadow-block5 mx-auto shadow-block5"><img src="img/block5_1.png"
+                                class="picture-block5" alt="block5_1"></div>
+                        <div>
+                            <p class="text-block5 mt-4">New platform format oriented towards the problems <br>
+                                of the MLM companies which the latter had to solve <br>
+                                manually previously</p>
                         </div>
                     </div>
-                    <div class="row mt-5 pb-4">
-                        <div class="col-4">
-                            <div class=" box-shadow-block5 mx-auto shadow-block5"><img src="img/block5_1.png"
-                                    class="picture-block5" alt="block5_1"></div>
-                            <div>
-                                <p class="text-block5 mt-4">New platform format oriented towards the problems <br>
-                                    of the MLM companies which the latter had to solve <br>
-                                    manually previously</p>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class=" box-shadow-block5 mx-auto shadow-block5"><img src="img/block5_2.png"
-                                    class="picture-block5" alt="block5_1"></div>
-                            <div>
-                                <p class="text-block5 mt-4">Seamless combination of front office and back <br>
-                                    office, common database – fully integrated <br>
-                                    approach</p>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class=" box-shadow-block5 mx-auto shadow-block5"><img src="img/block5_3.png"
-                                    class="picture-block5" alt="block5_1"></div>
-                            <div>
-                                <p class="text-block5 mt-4">Mobile application + desktop version give you <br>
-                                    a possibility to work in a format which suits you best,<br>
-                                    to be mobile and thorough at the same time</p>
-                            </div>
-                        </div>
-                        <div class="col-2 mt-4"></div>
-                        <div class="col-4 mt-4">
-                            <div class=" box-shadow-block5 mx-auto shadow-block5"><img src="img/block5_4.png"
-                                    class="picture-block5" alt="block5_1"></div>
-                            <div>
-                                <p class="text-block5 mt-4">The system is simple to use but capable of solving <br>
-                                    very important business tasks </p>
-                            </div>
-                        </div>
-                        <div class="col-4 mt-4">
-                            <div class=" box-shadow-block5 mx-auto shadow-block5"><img src="img/block5_5.png"
-                                    class="picture-block5" alt="block5_1"></div>
-                            <div>
-                                <p class="text-block5 mt-4">The platform is being constantly developed – each <br>
-                                    day we improve and amend it</p>
-                            </div>
-                        </div>
-                        <div class="col-2 mt-4"></div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="block6-content">
-                <div class="container">
-                    <h5 class="universal-h5 text-light pt-5 mb-4">Global changes. Clear goals</h5>
-                    <div class="row mb-4">
-                        <div class="col-4 ">
-                            <div class="backgroud-block6">
-                                <div class="basic py-3">basic</div>
-                                <div class="img-price"><img src="img/299.png" class="price" alt="price">
-                                </div>
-                                <div class="text-block6 pb-2">
-                                    <p>Неограниченный доступ к платформе <br>
-                                        Мощная панель администратора <br>
-                                        Обновления продукта <br>
-                                        Безрисковая гарантия <br>
-                                        E-mail поддержка <br>
-                                        <span class="crossed-out"> Маркетинговая служба </span> <br>
-                                        <span class="crossed-out">Премиум поддержка 24/7</span></p>
-                                    <button type="button" class="btn btn-primary basic-bottom px-3 mb-3">Начать
-                                        использование</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="backgroud-block6">
-                                <div class="standart py-3">standart</div>
-                                <div class="img-price"><img src="img/499.png" class="price" alt="price">
-                                </div>
-                                <div class="text-block6 pb-2">
-                                    <p>Неограниченный доступ к платформе <br>
-                                        Мощная панель администратора <br>
-                                        Обновления продукта <br>
-                                        Безрисковая гарантия <br>
-                                        E-mail поддержка <br>
-                                        Маркетинговая служба <br>
-                                        <span class="crossed-out">Премиум поддержка 24/7</span></p>
-                                    <button type="button" class="btn btn-primary standart-bottom px-3 mb-3">Начать
-                                        использование</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="backgroud-block6">
-                                <div class="premium py-3">premium</div>
-                                <div class="img-price"><img src="img/699.png" class="price" alt="price">
-                                </div>
-                                <div class="text-block6 pb-2">
-                                    <p>Неограниченный доступ к платформе <br>
-                                        Мощная панель администратора <br>
-                                        Обновления продукта <br>
-                                        Безрисковая гарантия <br>
-                                        E-mail поддержка <br>
-                                        Маркетинговая служба <br>
-                                        Премиум поддержка 24/7</p>
-                                    <button type="button" class="btn btn-primary premium-bottom px-3 mb-3">Начать
-                                        использование</button>
-                                </div>
-                            </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class=" box-shadow-block5 mx-auto shadow-block5"><img src="img/block5_2.png"
+                                class="picture-block5" alt="block5_1"></div>
+                        <div>
+                            <p class="text-block5 mt-4">Seamless combination of front office and back <br>
+                                office, common database – fully integrated <br>
+                                approach</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row mt-5 mb-5">
-                    <div class="col-6">
-                        <h5 class="universal-h5 text-left">about company</h5>
-                        <p class="text-p2-block7">For more than 6 years we collaborated with the MLM companies and
-                            assisted them <br>
-                            in building up their teams by developing customized software. 12 companies <br>
-                            trusted us with finding solutions for their tasks, and our long-term and fruitful <br>
-                            cooperation bore fruit. </p>
-                        <p class="text-p2-block7">We looked at the industry from the inside, which enabled us to
-                            understand what <br>
-                            hinders the companies’ development, what they have to struggle against every day. <br>
-                            So we decided that it was high time to create something new, something that would <br>
-                            solve numerous problems weighing upon every player in this market. We hope it will <br>
-                            have a worldwide impact and transform the industry.
-                        </p>
-                    </div>
-                    <div class="col-6 pl-0 picture-block7 d-flex align-items-center">
-                        <p class="text-p-block7 ">MLM business may improve its <br>
-                            image, thus expanding the <br>
-                            market. It’s a mistake to <br>
-                            perceive it as it is done now <br> <br>
-                            <span class="epigraph ">— Максим Фамилия, должность</span>
-                        </p>
-                    </div>
-                </div>
-                <h6 class="company-values ">company values</h6>
-                <div class="row mt-4">
-                    <div class="col-3 d-flex px-0">
-                        <span>
-                            <img src="img/block7_1.png" class="icon-block7" alt="block7">
-                        </span>
-                        <div class="pl-2">
-                            <h6 class="h6-for-block7">Reputation </h6>
-                            <p class="text-p2-block7">We are keen to give the MLM <br>
-                                companies a possibility to <br>
-                                excel in what they do</p>
+                    <div class="col-md-4 col-sm-12">
+                        <div class=" box-shadow-block5 mx-auto shadow-block5"><img src="img/block5_3.png"
+                                class="picture-block5" alt="block5_1"></div>
+                        <div>
+                            <p class="text-block5 mt-4">Mobile application + desktop version give you <br>
+                                a possibility to work in a format which suits you best,<br>
+                                to be mobile and thorough at the same time</p>
                         </div>
                     </div>
-                    <div class="col-3 d-flex px-0">
-                        <span>
-                            <img src="img/block7_2.png" class="icon-block7" alt="block7">
-                        </span>
-                        <div class="pl-2">
-                            <h6 class="h6-for-block7">Tipping point</h6>
-                            <p class="text-p2-block7">We seek to give the MLM <br>
-                                business, in the classic <br>
-                                principles of which we believe, <br>
-                                new tools that could change its <br>
-                                current image to the better and <br>
-                                to gain the market’s trust</p>
+                    <div class="col-md-2 mt-4"></div>
+                    <div class="col-md-4  col-sm-12 mt-4">
+                        <div class=" box-shadow-block5 mx-auto shadow-block5"><img src="img/block5_4.png"
+                                class="picture-block5" alt="block5_1"></div>
+                        <div>
+                            <p class="text-block5 mt-4">The system is simple to use but capable of solving <br>
+                                very important business tasks </p>
                         </div>
                     </div>
-                    <div class="col-3 d-flex px-0">
-                        <span>
-                            <img src="img/block7_3.png" class="icon-block7" alt="block7">
-                        </span>
-                        <div class="pl-2">
-                            <h6 class="h6-for-block7">Innovative approach <br> to applications </h6>
-                            <p class="text-p2-block7">The world of new applications <br>
-                                differs significantly from the old <br>
-                                approach to doing business. It <br>
-                                concerns efficiency of <br>
-                                operations and opening vistas. <br>
-                                We are following all new <br>
-                                technologies in order to be able <br>
-                                to present them to the MLM <br>
-                                companies at one venue</p>
+                    <div class="col-md-4 mt-4">
+                        <div class=" box-shadow-block5 mx-auto shadow-block5"><img src="img/block5_5.png"
+                                class="picture-block5" alt="block5_1"></div>
+                        <div>
+                            <p class="text-block5 mt-4">The platform is being constantly developed – each <br>
+                                day we improve and amend it</p>
                         </div>
                     </div>
-                    <div class="col-3 d-flex px-0">
-                        <span>
-                            <img src="img/block7_4.png" class="icon-block7" alt="block7">
-                        </span>
-                        <div class="pl-2">
-                            <h6 class="h6-for-block7">Relations with users </h6>
-                            <p class="text-p2-block7">To ensure the ultimate <br>
-                                usefulness of the product we <br>
-                                constantly check whether our <br>
-                                improvements really help our <br>
-                                customers. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-4 mb-4 justify-content-center">
-                    <div class="col-4  pt-2 pb-3 box-shadow-block7">
-                        <h6 class="our-mission mt-3 ">our m<span class="line">is</span>sion</h6>
-
-                        <p class="text-p2-block7 text-dark text-center">is to demonstrate the existing possibilities for
-                            implementation of the new <br>
-                            approach to doing business to all MLM companies, to help set up an out <br>
-                            standing team, achieve high goals, have impact on the industry. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
-                <div class="container">
-                    <div class="row pt-5">
-                        <h5 class="universal-h5 text-left pt-5">If you have <br> any more questions:</h5>
-                    </div>
-                    <div class="row">
-                        <div class="col-4 picture-footer"></div>
-                        <div class="col-8">
-                            <form class="needs-validation" novalidate>
-                                <div class="form-group d-flex mb-4">
-                                    <input type="text" class="form-control mr-4 " id="validationCustom03"
-                                        placeholder="Your name" required>
-                                    <input type="email" class="form-control " id="exampleFormControlInput1"
-                                        id="validationCustom03" aria-describedby="emailHelp"
-                                        placeholder="Your e-mail address">
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" id="exampleFormControlTextarea1"
-                                        placeholder="Your question" rows="7"></textarea>
-                                </div>
-                                <div class="form-group d-flex mb-4 mt-4">
-                                    <input type="text" class="form-control mr-4 invisible  "
-                                        id="exampleFormControlInput1" placeholder="Your name">
-                                    <button type="submit" class="form-control btn btn-primary ">Send your
-                                        message</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="contact">
-                <div class="container">
-                    <div class="row py-0">
-                        <div class="col-5 d-flex">
-                            <div class="col-4 d-flex align-items-center px-0 ">
-                                <img src="img/logo_footer.png" class="logo-img" alt="icon_logo">
-                                <a href="index.html">
-                                    <h3 class="logo  text-uppercase pl-2 text-light m-auto">logo</h3>
-                                </a>
-                            </div>
-                            <div class="col-4 d-flex align-items-center px-0">
-                                <i class="fas fa-phone-volume text-light menu"></i>
-                                <a href="#">
-                                    <h6 class=" text-uppercase pl-1 menu m-auto">+11111111100</h6>
-                                </a>
-                            </div>
-                            <div class="col-4 d-flex align-items-center px-0">
-                                <i class="far fa-envelope-open text-light menu"></i>
-                                <a href="#">
-                                    <h6 class=" pl-1 menu m-auto">hello@nlab.com</h6>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-7 pt-5">
-                            <p class="text-contact">© 2007-2019, Networking Lab</p>
-                        </div>
-                    </div>
+                    <div class="col-md-2 mt-4"></div>
 
                 </div>
             </div>
         </div>
+        <div class="block6-content">
+            <div class="container">
+                <h5 class="universal-h5 text-light pt-5 mb-4">Global changes. Clear goals</h5>
+                <div class="row mb-4">
+                    <div class="col-md-4 col-sm-12 padding-col-block6">
+                        <div class="backgroud-block6">
+                            <div class="basic py-3">basic</div>
+                            <div class="img-price"><img src="img/299.png" class="price" alt="price">
+                            </div>
+                            <div class="text-block6 pb-2">
+                                <p>Неограниченный доступ к платформе <br>
+                                    Мощная панель администратора <br>
+                                    Обновления продукта <br>
+                                    Безрисковая гарантия <br>
+                                    E-mail поддержка <br>
+                                    <span class="crossed-out"> Маркетинговая служба </span> <br>
+                                    <span class="crossed-out">Премиум поддержка 24/7</span></p>
+                                <button type="button" class="btn btn-primary basic-bottom px-3 mb-3">Начать
+                                    использование</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 padding-col-block6">
+                        <div class="backgroud-block6">
+                            <div class="standart py-3">standart</div>
+                            <div class="img-price"><img src="img/499.png" class="price" alt="price">
+                            </div>
+                            <div class="text-block6 pb-2">
+                                <p>Неограниченный доступ к платформе <br>
+                                    Мощная панель администратора <br>
+                                    Обновления продукта <br>
+                                    Безрисковая гарантия <br>
+                                    E-mail поддержка <br>
+                                    Маркетинговая служба <br>
+                                    <span class="crossed-out">Премиум поддержка 24/7</span></p>
+                                <button type="button" class="btn btn-primary standart-bottom px-3 mb-3">Начать
+                                    использование</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 padding-col-block6">
+                        <div class="backgroud-block6">
+                            <div class="premium py-3">premium</div>
+                            <div class="img-price"><img src="img/699.png" class="price" alt="price">
+                            </div>
+                            <div class="text-block6 pb-2">
+                                <p>Неограниченный доступ к платформе <br>
+                                    Мощная панель администратора <br>
+                                    Обновления продукта <br>
+                                    Безрисковая гарантия <br>
+                                    E-mail поддержка <br>
+                                    Маркетинговая служба <br>
+                                    Премиум поддержка 24/7</p>
+                                <button type="button" class="btn btn-primary premium-bottom px-3 mb-3">Начать
+                                    использование</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-md-6 col-sm-12">
+                    <h5 class="universal-h5 text-left">about company</h5>
+                    <p class="text-p2-block7">For more than 6 years we collaborated with the MLM companies and
+                        assisted them <br>
+                        in building up their teams by developing customized software. 12 companies <br>
+                        trusted us with finding solutions for their tasks, and our long-term and fruitful <br>
+                        cooperation bore fruit. </p>
+                    <p class="text-p2-block7">We looked at the industry from the inside, which enabled us to
+                        understand what <br>
+                        hinders the companies’ development, what they have to struggle against every day. <br>
+                        So we decided that it was high time to create something new, something that would <br>
+                        solve numerous problems weighing upon every player in this market. We hope it will <br>
+                        have a worldwide impact and transform the industry.
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-12 pl-0 picture-block7 d-flex align-items-center">
+                    <p class="text-p-block7 ">MLM business may improve its <br>
+                        image, thus expanding the <br>
+                        market. It’s a mistake to <br>
+                        perceive it as it is done now <br> <br>
+                        <span class="epigraph ">— Максим Фамилия, должность</span>
+                    </p>
+                </div>
+            </div>
+            <h6 class="company-values ">company values</h6>
+            <div class="row mt-4">
+                <div class="col-md-3 col-sm-6 d-flex px-0">
+                    <span>
+                        <img src="img/block7_1.png" class="icon-block7" alt="block7">
+                    </span>
+                    <div class="pl-2">
+                        <h6 class="h6-for-block7">Reputation </h6>
+                        <p class="text-p2-block7">We are keen to give the MLM <br>
+                            companies a possibility to <br>
+                            excel in what they do</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <span>
+                        <img src="img/block7_2.png" class="icon-block7" alt="block7">
+                    </span>
+                    <div class="pl-2">
+                        <h6 class="h6-for-block7">Tipping point</h6>
+                        <p class="text-p2-block7">We seek to give the MLM <br>
+                            business, in the classic <br>
+                            principles of which we believe, <br>
+                            new tools that could change its <br>
+                            current image to the better and <br>
+                            to gain the market’s trust</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 d-flex px-0">
+                    <span>
+                        <img src="img/block7_3.png" class="icon-block7" alt="block7">
+                    </span>
+                    <div class="pl-2">
+                        <h6 class="h6-for-block7">Innovative approach <br> to applications </h6>
+                        <p class="text-p2-block7">The world of new applications <br>
+                            differs significantly from the old <br>
+                            approach to doing business. It <br>
+                            concerns efficiency of <br>
+                            operations and opening vistas. <br>
+                            We are following all new <br>
+                            technologies in order to be able <br>
+                            to present them to the MLM <br>
+                            companies at one venue</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 d-flex px-0">
+                    <span>
+                        <img src="img/block7_4.png" class="icon-block7" alt="block7">
+                    </span>
+                    <div class="pl-2">
+                        <h6 class="h6-for-block7">Relations with users </h6>
+                        <p class="text-p2-block7">To ensure the ultimate <br>
+                            usefulness of the product we <br>
+                            constantly check whether our <br>
+                            improvements really help our <br>
+                            customers. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 mb-4 justify-content-center">
+                <div class="col-md-4 col-sm-12 pt-2 pb-3 box-shadow-block7">
+                    <h6 class="our-mission mt-3 ">our m<span class="line">is</span>sion</h6>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="//cdn.jsdelivr.net/jquery.shadow-animation/1/mainfile"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-        <script src="js/refresh.js"></script>
-        <script src="js/validate.js"></script>
+                    <p class="text-p2-block7 text-dark text-center">is to demonstrate the existing possibilities for
+                        implementation of the new <br>
+                        approach to doing business to all MLM companies, to help set up an out <br>
+                        standing team, achieve high goals, have impact on the industry. </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row pt-5">
+                    <h5 class="universal-h5 text-left pt-5">If you have <br> any more questions:</h5>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 picture-footer"></div>
+                    <div class="col-md-8">
+                        <form class="needs-validation" novalidate>
+                            <div class="form-group d-flex mb-4">
+                                <input type="text" class="form-control mr-4 " id="validationCustom03"
+                                    placeholder="Your name" required>
+                                <input type="email" class="form-control " id="exampleFormControlInput1"
+                                    id="validationCustom03" aria-describedby="emailHelp"
+                                    placeholder="Your e-mail address">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                    placeholder="Your question" rows="7"></textarea>
+                            </div>
+                            <div class="form-group d-flex mb-4 mt-4">
+                                <input type="text" class="form-control mr-4 invisible  " id="exampleFormControlInput1"
+                                    placeholder="Your name">
+                                <button type="submit" class="form-control btn btn-primary ">Send your
+                                    message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="container">
+                <div class="row py-0">
+                    <div class="col-md-5 d-flex">
+                        <div class="col-4 d-flex align-items-center px-0 ">
+                            <img src="img/logo_footer.png" class="logo-img" alt="icon_logo">
+                            <a href="index.html">
+                                <h3 class="logo  text-uppercase pl-2 text-light m-auto">logo</h3>
+                            </a>
+                        </div>
+                        <div class="col-4 d-flex align-items-center px-0">
+                            <i class="fas fa-phone-volume text-light menu"></i>
+                            <a href="#">
+                                <h6 class=" text-uppercase pl-1 menu m-auto">+11111111100</h6>
+                            </a>
+                        </div>
+                        <div class="col-4 d-flex align-items-center px-0">
+                            <i class="far fa-envelope-open text-light menu"></i>
+                            <a href="#">
+                                <h6 class=" pl-1 menu m-auto">hello@nlab.com</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-7 pt-5">
+                        <p class="text-contact">© 2007-2019, Networking Lab</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.shadow-animation/1/mainfile"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/refresh.js"></script>
+    <script src="js/validate.js"></script>
 </body>
 
 </html>
